@@ -13,13 +13,8 @@ h1{
     font-size: 60px;
     font-style: italic;
     font-weight: 200;
-    background-color: #ededd3;
-    padding: 1em;
-    border-color: #426f58;
-    border-style:solid;
-    border-width: 3px;
-    border-radius: 50%;
 }
+
 h2{
     font-family: "Titillium Web", sans-serif;
     font-size: 30px;
@@ -29,6 +24,9 @@ h3{
     font-family: "Courier Prime", monospace;
     font-weight: 600;
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 h4{
@@ -52,24 +50,57 @@ p{
     font-weight: 400;
     font-size: 15px;
 }
+a{
+    font-family: "Courier Prime", monospace;
+    font-weight: 200;
+    font-size: 20px;
+    color: #426f58;
+    padding: 10px;
+    border-radius: 1em;
+    border-color: #426f58;
+    border-style: solid;
+    text-decoration: none;
+
+}
     /* clases/id */
+
 .letra-capitular{
      font-family: "Ballet", cursive;
      font-size: 300px;
 }
+
 .presentacion-hola{
     font-size: 60px;
 }
+.img-portafolio{
+    border-radius: 10px;
+}
 
-h1:hover{
+
+/* fin H */
+
+/*Contenedores*/
+a:hover{
+    color: #ededd3;
+    background-color: #426f58;
+    padding: 10px;
+    border-radius: 1em;
+    text-decoration: none;
+}
+.portada{
+    background-color: #ededd3;
+    padding: 1em;
+    border-color: #426f58;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 20%;
+}
+.portada:hover{
     color: #ededd3;
     background-color: #426f58;
     padding: 1em;
 }
 
-/* fin H */
-
-/*Contenedores*/
 .contenedor-presentacion{
     display: flex;
     flex-direction: row;
@@ -99,8 +130,6 @@ h1:hover{
     display: flex;
     flex-direction: row;
 }
-
-
 .apartado-habilidades{
     background-color: #426f58;
     color: #ededd3;
@@ -109,6 +138,15 @@ h1:hover{
 
 }
 
+/*contacto*/
+.contenedor-redes-sociales{
+    display: flex;
+    flex-direction: column;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+}
 
 
 
@@ -171,7 +209,15 @@ input{
     flex-direction: row;
 }
 
-
+/*grilla*/
+.grilla-imagenes{
+    display: grid;
+    grid-template-columns: 200px;
+}
+.grilla-item{
+    width: 200px;
+    height: 220px;
+}
 /*
 Colores: 
 #ededd3 beige
