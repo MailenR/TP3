@@ -167,6 +167,7 @@ footer{
     flex-direction: row;
     align-items: center;
     margin-top: 1em;
+    width: 56em;
 }
 
 
@@ -212,11 +213,13 @@ input{
 /*grilla*/
 .grilla-imagenes{
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 200px 4em;
+
 }
 .grilla-item{
     width: 200px;
-    height: 220px;
+    height: 250px;
 }
 /*
 Colores: 
