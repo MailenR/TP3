@@ -11,7 +11,7 @@
         <nav>
             <a href="../index.html">✦︎Inicio✦︎</a>
             <a href="./portafolio.html">✦︎Portafolio✦︎</a>
-            <a href="contacto.html">✦︎Contacto✦︎</a>
+            <a href="./contacto.html">✦︎Contacto✦︎</a>
         </nav>
     </header>
     
@@ -21,17 +21,33 @@
                     
         <div class="formulario">
         <h1>Contáctame!</h1>
-        <form target="_blank" action="https://formsubmit.co/aldanricarte@gmail.com" method="POST">
-            <label>Nombre</label>
-                            <input type="text" name="Nombre" id="Nombre" maxlength="20" placeholder="Jane Doe" required>
+        <form action="https://formsubmit.co/aldanricarte@gmail.com" method="post" autocomplete="off">
+            
+            <label for="Nombre">Nombre *</label>
+            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Jane Doe" required>
 
-                            <label>Email</label>
-                            <input type="email" name="Email" id="Email" placeholder="correo@gmail.com">  
+            <label for="Telefono">Teléfono</label>
+            <input type="number" name="Telefono" id="Telefono">
+            
+            <label for="Email">Email *</label>
+            <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
+
             <input type="submit">
         </form>
-        </div>
 
-            <!-- modify this form HTML and place wherever you want your form -->
+
+
+<!--<form method="post" action="mailto:aldanricarte@gmail.com.ar?subject='Email enviado'" target="_blank" enctype="text/plain">
+            <label for="Nombre">Nombre *</label>
+            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Jane Doe" required>
+            <form target="_blank" action="https://formsubmit.co/aldanricarte@gmail.com" method="POST"> 
+
+           <label for="Email">Email *</label>
+            <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
+
+            <input type="submit">
+        </form>-->
+        </div>
 
     </main>
 
