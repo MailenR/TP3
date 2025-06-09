@@ -15,19 +15,17 @@
         </nav>
     </header>
     
-    <main>
-        <h2>Contacto</h2>
-        <p>* campos obligatorios</p>
-                    
+    <main>     
         <div class="formulario">
         <h1>Contáctame!</h1>
+        <p>* campos obligatorios</p>
         <form action="https://formsubmit.co/aldanricarte@gmail.com" method="post" autocomplete="off">
             
             <label for="Nombre">Nombre *</label>
             <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Jane Doe" required>
 
             <label for="Telefono">Teléfono</label>
-            <input type="number" name="Telefono" id="Telefono">
+            <input type="number" name="Telefono" id="Telefono" placeholder="+11 1234 5678">
             
             <label for="Email">Email *</label>
             <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
@@ -37,16 +35,7 @@
 
 
 
-<!--<form method="post" action="mailto:aldanricarte@gmail.com.ar?subject='Email enviado'" target="_blank" enctype="text/plain">
-            <label for="Nombre">Nombre *</label>
-            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Jane Doe" required>
-            <form target="_blank" action="https://formsubmit.co/aldanricarte@gmail.com" method="POST"> 
 
-           <label for="Email">Email *</label>
-            <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
-
-            <input type="submit">
-        </form>-->
         </div>
 
     </main>
@@ -73,10 +62,4 @@ escribir |  git status
 
 ----------------------------------
 
-SUBIR A UNA RAMA:
-            git status
-            git add . (el punto añade todo los cambios, otherwise poner nombre especifico file)
-            git commit -nombrerama "texto descripcion q se cambio"
-
-            git push -u origin nombrerama
 -->

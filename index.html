@@ -5,6 +5,11 @@
     <title>Ricarte Aldana Mailen </title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
      <header>
@@ -17,17 +22,26 @@
 
     <main>
         
-       <h1>Mailén Ricarte</h1>
-        <section >
-            <h3>Sobre mí</h3>
-            <img src="./img/foto-perfil.jpg" alt="Foto de perfil">
-            <p>
-                Soy estudiante de Diseño y Comunicación Visual. Me entusiasma crear cosas lindas, claras y con intención. Soy de Virgo, y tengo un perrito llamado Simon. Me interesan el diseño editorial, la tipografía y todo lo que combina estética con funcionalidad. Siempre estoy aprendiendo algo nuevo y buscando formas de contar mejor lo que quiero decir (o diseñar).
-            </p>
+       <h1><span class="letra-capitular">M</span>ailén Ricarte</h1>
+
+
+        <section class="contenedor-presentacion"> <!--Presentación-->
+            <div class="contenedor-presentacion-titulo-foto-perfil">
+                <h2 class="presentacion-hola">HOLA!!</h2>
+                <img src="./img/foto-perfil.jpg" alt="Foto de perfil"> <!--que cuando le hagas hover se haga gif? se ponga la foto a color o al negativo? idk algo-->
+            </div>
+            <div class="contenedor-presentacion-parrafo-y-simon">
+                <p>Soy estudiante de Diseño y Comunicación Visual. Me entusiasma crear cosas lindas, claras y con intención. Soy de Virgo, y tengo un perrito llamado Simon. Me interesan el diseño editorial, la tipografía y todo lo que combina estética con funcionalidad. Siempre estoy aprendiendo algo nuevo y buscando formas de contar mejor lo que quiero decir (o diseñar).
+                </p>
+                
+                <p>(este es simon, esta en este cv como apoyo emocional)</p> <!--que cuando le hagas hover se haga un videito/gif de el-->
+            </div>
         </section>
         <div>
             <section>
+                <section class="educacion">
                 <h3>✦︎Educación</h3>
+                <div>
                     <h4>Formación Académica</h4>
                     <ul>
                         <li>
@@ -41,8 +55,8 @@
                             Licenciatura en Diseño y Comunicación Visual
                         </li>
                     </ul>
-
-
+                </div>
+                <div>
                     <h4>Cursos</h4>
                     <ul>
                         <li>
@@ -55,57 +69,87 @@
                             <p>Julio 2024/Programa CaC 4.0</p>
                         </li>
                     </ul>
+                </div>
             </section>
+            </section>
+            <section class="educacion">
+                <h3>✦︎Educación</h3>
+                <div>
+                    <h4>Formación Académica</h4>
+                    <ul>
+                        <li>
+                            <h5>Secundaria n°64 Lomas de Zamora</h5>
+                             <p>2018-2020</p>
+                             Bachiller en artes visuales                  
+                        </li>
+                        <li>
+                            <h5>Universidad Nacional de Lanús</h5>
+                            <p>2021 - actualidad</p>
+                            Licenciatura en Diseño y Comunicación Visual
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li>
+                            <h5>Introducción a la programación</h5>
+                            <p>Julio 2023/Programa CaC 4.0</p>
 
-            <section>
-                <h3> ✦︎Conocimientos</h3>
+                        </li>
+                        <li>
+                            <h5>Diseño Ux/Ui</h5>
+                            <p>Julio 2024/Programa CaC 4.0</p>
+                        </li>
+                    </ul>
+                </div>     
+            </section>
+         
+            <section class="experiencia">
+                <h3>✦︎Experiencia</h3>
+                <div>
+                    <h4>Asistente administrativa informal</h4>
+                    <p>2021 - actualidad</p>
+                    <ul>
+                        <li>Apoyo en tareas administrativas escolares: transcripción y organización de calificaciones en planillas de Excel.</li>
+                        <li>Manejo básico de herramientas ofimáticas (Excel, Google Sheets)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Creación de sprites(mod MAS) </h4>
+                    <p>2021 - actualidad</p>
+                    <ul>
+                        <li>Diseño e ilustración de sprites para personajes del mod.</li>
+                        <li>Desarrollo de contenido visual integrado con un formato de intercambio de datos(json)</li>
+                    </ul>
+                </div>     
+            </section>
+            <section class="habilidades">
+                <h3> ✦︎Habilidades</h3>
                 <div>
                      <h4>Diseño</h4>
                     <ul>
-                        <li>Indesign<p>/avanzado</p></li>
-                        <li>Photoshop <p>/avanzado</p></li>
-                        <li>Illustrator <p>/intermedio</p></li>
-                        <li>Canva<p>/intermedio</p></li>
-                        <li>Figma <p>/intermedio</p></li>
+                        <li>Indesign</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Canva</li>
+                        <li>Figma</li>
                     </ul>
 
-               
+            
                     <h4>Arministrativo</h4>
                     <ul>
-                        <li>Office  <p>/intermedio</p></li>
-                        <li>Google WS  <p>/intermedio</p></li>
+                        <li>Office</li>
+                        <li>Google WS</li>
                     </ul>
 
                     <h4>Idiomas</h4>
                      <ul>
-                        <li>Español  <p>Nativo</p></li>
-                        <li>Inglés  <p>/B2</p></li>
+                        <li>Español nativo</li>
+                        <li>Inglés B2</li>
                     </ul>
                 </div>
             </section>
-            <section>
-                <h3>✦︎Experiencia</h3>
-                <div>
-                    <article>
-                        <h4>Asistente administrativa informal</h4>
-                        <ul>
-                            <li><p>2019-2021</p></li>
-                            <li>Apoyo en tareas administrativas escolares: transcripción y organización de calificaciones en planillas de Excel.</li>
-                            <li>Manejo básico de herramientas ofimáticas (Excel, Google Sheets)</li>
-                        </ul>
-                                 
-                        
-                    </article>
-                    <article>
-                        <h4>Colaboración de proyectos personalizados | Mod "Monika After Story"</h4>
-                        <ul>
-                            <li><p>2021-actualidad</p></li>
-                            <li>Diseño e ilustración de sprites para personajes del mod.</li>
-                            <li>Desarrollo de contenido visual integrado con un formato de intercambio de datos(json)</li>
-                        </ul>
-                    </article>
-                </div>            
-            </section>           
         </div>
     </main>
     <footer>
@@ -130,10 +174,4 @@ escribir |  git status
 
 ----------------------------------
 
-SUBIR A UNA RAMA:
-            git status
-            git add . (el punto añade todo los cambios, otherwise poner nombre especifico file)
-            git commit -nombrerama "texto descripcion q se cambio"
-
-            git push -u origin nombrerama
 -->
