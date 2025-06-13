@@ -11,11 +11,14 @@ html{
 header{
     margin-top: 10px;
 }
+main{
+    margin-top: 130px;
+}
 /* inicio textos, h1, h2, h3, h4, p */
     /* generales*/  
 h1{
     font-family: "Titillium Web", sans-serif;
-    font-size: 60px;
+    font-size: 150px;
     font-style: italic;
     font-weight: 200;
     margin-bottom: 0px;
@@ -65,13 +68,20 @@ h7{
 }
 
 nav{
-    max-width: max-content;
-    justify-self: center;
-    margin-top: 30px;
+   margin-top: 1%;
     display: flex;
+    border-style: solid;
+    border-color: #426f58;
+    justify-content: center;
+    border-radius: 20px;
     width: 60%;
     padding: 0px;
-    gap: 10%;
+    background-color: #ededd3;
+    font-family: "Courier Prime", monospace;
+    font-size: 80%;
+    position: fixed;
+    z-index: 50;
+    
 }
 
 
@@ -87,12 +97,18 @@ a{
     color: #426f58;
     padding: 10px;
     border-radius: 1em;
-    border-color: #426f58;
-    border-style: solid;
     text-decoration: none;
 }
 
-/*Textos clases/id*/
+li{
+    list-style: none;
+    margin: 0px;
+    font-family:"Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*Textos con clases/id*/
 a:hover{
     color: #ededd3;
     background-color: #426f58;
@@ -100,12 +116,27 @@ a:hover{
     border-radius: 1em;
     text-decoration: none;
 }
-
+.red-social{
+    border-radius: 40px;
+    border-color: #426f58;
+    border-width: 3px;
+    border-style: solid;
+}
 .letra-capitular{
      font-family: "Ballet", cursive;
      font-size: 250px;
      position: relative;
      left: -100px;
+}
+.h4-con-fondo{
+    background-color: #426f58;
+    color: #ededd3;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* fin textos */
@@ -147,7 +178,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 210px;
+    top: 300px;
 
 }
 .contenedor-lola-y-habilidades{
@@ -165,10 +196,23 @@ a:hover{
     padding-right: 20px;
     height: fit-content;
 }
+.contenedor-habilidades-generales{
+    display: flex;
+    flex-direction: column;
+    background-color: #426f58;
+    color: #ededd3;
+    padding-top: 10px;    
+    border-radius: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: fit-content;
+}
 .contenedor-habilidades{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    width: max-content;
   
 }
 .habilidad{
@@ -180,6 +224,7 @@ a:hover{
 .categorias{
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 .contenedor-cv{
     display: flex;
@@ -194,13 +239,21 @@ a:hover{
 }
 
 /*contacto*/
-.contenedor-redes-sociales{
+
+
+#contenedor-redes-sociales{
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
+    justify-self: center;
+    
 }
-.redes{
+#redes{
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    justify-self: center;
 }
 .imageBox {
   position: relative;
@@ -227,23 +280,28 @@ img{
     border-width: 3px;
     border-style: solid;  
 }
+.imagen-hover-simon{
+    align-self: right; /*probe con todos los align y justify y no me lo deja alinear a la derecha como estaba en el figma, y con posicion me mueve la caja (el parrafo y la otra foto) de lugar*/
+}
 .foto-perfil{
     border-radius: 200px;
 }
-.foto-perfil Simon ::hover{
-    img
-}
+
+
 footer{
     background-color: #426f58;
     color: #ededd3;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     padding: 1em;
     display: flex;
     flex-direction: row;
+    align-self: center;
     align-items: center;
     margin-top: 1em;
-    width: 56em;
+    justify-self: center;
+    width: 100%;
+    padding: 30px;
 }
 
 
@@ -251,6 +309,7 @@ footer{
 form{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 label{
@@ -261,6 +320,7 @@ label{
     display: flex;
     flex-direction: column;
     padding-left: 5px;
+    margin-top: 20px;
 }
 
 input{
@@ -268,6 +328,13 @@ input{
     border-color: #426f58;
     padding: 5px;
     border-radius: 20px;
+    margin-bottom: 20px ;
+}
+.tipo-de-pedido{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: center;
 }
 ::placeholder{
     color: #868f8a;
@@ -281,22 +348,55 @@ input{
     font-weight: 600;
     font-size: 20px;
 }
+.enviar::hover{
+    background-color: #ededd3;
+    color: #426f58;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #426f58;
+}
 .formulario{
     display: flex;
     flex-direction: row;
 }
 
-/*grilla
 .grilla-imagenes{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 200px 4em;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px;
+    gap: 20px;
+    justify-self: center;
 
 }
 .grilla-item{
-    width: 200px;
-    height: 250px;
-}*/
+    width: 100%;
+    justify-content: center;
+    gap: 20px
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portada{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+
 /*
 Colores: 
 #ededd3 beige

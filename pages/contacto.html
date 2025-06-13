@@ -2,9 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ricarte Aldana Mailen </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-    <link href="../estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
     <header>
@@ -19,7 +25,10 @@
         <div class="formulario">
             <section>
                 <h1> Contáctame!</h1>
-                <p>* campos obligatorios</p>
+                <div>
+                    <p>* campos obligatorios</p>
+                </div>
+                
             </section>
             
             <form action="https://formsubmit.co/aldanricarte@gmail.com" method="post" autocomplete="off">
@@ -34,28 +43,31 @@
                 <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
 
                 <label for="Tipo de pedido">Tipo de pedido</label>
+                <div class="tipo-de-pedido">
                 <label><input type="radio" name="Consulta" value="Consulta" id="Consulta">Consulta</label>
                 <label><input type="radio" name="Editorial" value="Editorial" id="Editorial"> Diseño editorial</label>
                 <label><input type="radio" name="Ilustración" value="Ilustración" id="Ilustración"> Ilustración</label>
                 <label><input type="radio" name="Prototipos" value="Prototipos" id="Prototipos"> Prototipos</label>
-
+                </div>
+               <label for="Mensaje">Mensaje</label>
+                <input type="text" name="Mensaje" id="Mensaje" maxlength="10000" placeholder="Tengo consultas sobre..." required>
                 <input type="submit" class="enviar">
             </form>
         </div>
 
         <section id="contenedor-redes-sociales">
-                <h3>Puedes encontrarme en mis redes sociales:</h3>
+                <h3>Podés encontrarme en mis redes sociales también:</h3>
                 <div id="redes">
-                    <a href="https://www.behance.net/aaldanaricarte" target="_blank">
+                    <a href="https://www.behance.net/aaldanaricarte" target="_blank" class="red-social">
                         Behance
                     </a>
-                    <a href="https://www.linkedin.com/in/neliamricarte" target="_blank">
+                    <a href="https://www.linkedin.com/in/neliamricarte" target="_blank" class="red-social">
                         LinkedIn
                     </a>
-                    <a href="https://www.instagram.com/_neliamr/" target="_blank">
+                    <a href="https://www.instagram.com/_neliamr/" target="_blank" class="red-social">
                         Instagram
                     </a>
-                    <a href="https://neliamricarte.tumblr.com" target="_blank">
+                    <a href="https://neliamricarte.tumblr.com" target="_blank" class="red-social">
                         Tumblr
                     </a>
                 </div>
