@@ -7,6 +7,7 @@ html{
     background-color: #ededd3;
     margin-left: 300px;
     margin-right: 300px;
+    color: #426f58;
 }
 
 header{
@@ -120,12 +121,57 @@ h7{
 .letra-capitular{
      font-family: "Ballet", cursive;
      font-size: 250px;
-     position: relative;
-     left: -100px;
+     /**/
 }
 
 /***********************Fin textos***********************/
 
+
+
+/************************ INICIO INDEX************************/
+
+.portada{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #426f58;
+    background-color: #ededd3;
+}
+.portada:hover{
+    background-color: #426f58;
+    color: #ededd3;
+}
+.portada h2{
+    position: relative;
+    left: -5%;
+}
+
+.contenedor-presentacion{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: yellowgreen;
+    gap: 20px;
+}
+.contenedor-presentacion-titulo-foto-perfil{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    gap: 20px;
+    align-items: end;
+}
+.foto-perfil-yo{
+    border-radius: 100%;
+}
+.imagen-hover-simon img{
+    border-radius: 100px;
+    border-color: #426f58;
+    border-style: solid;
+    border-width: 2px;
+}
 
 .imageBox {
   position: relative;
@@ -142,6 +188,37 @@ h7{
 .imageBox:hover .hoverImg {
   display: block;
 }
+
+
+.contenedor-presentación-lola-habilidades{
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+    align-self: center;
+
+}
+.contenedor-lola-y-habilidades{
+    flex-direction: row;
+    background-color: tomato;
+}
+.contenedor-habilidades-diseño{
+    flex-direction: row;
+    background-color: slategray;
+}
+
+.contenedor-habilidades{
+    background-color: seashell;
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    gap: 50px;
+    align-items: end;
+}
+
+
+/***********************FIN INDEX***********************/
+
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width:1200px){
