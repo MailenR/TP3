@@ -73,6 +73,13 @@ footer{
     padding: 30px;
     margin: 50px 0px 0px 0px;
 }
+img{
+    width: 100%;
+    border-radius: 20px;
+    border-color: #426f58;
+    border-width: 2px;
+    border-style: solid;
+}
 /***********************Textos***********************/
 h1{
     font-family: "Titillium Web", sans-serif;
@@ -198,10 +205,16 @@ li{
     gap: 20px;
     align-items: end;
 }
+.imagen-hover-simon img{
+    width: 203px;
+    height: 203px;
+}
 .foto-perfil-yo{
     border-radius: 100%;
 }
-.imagen-hover-simon img{
+.foto-perfil-yo:hover{
+    filter: blur(100%);
+}.imagen-hover-simon img{
     border-radius: 100px;
     border-color: #426f58;
     border-style: solid;
@@ -265,6 +278,9 @@ li{
 
 .habilidad img{
     border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    align-items: center;
 }
 
 .contenedor-cv{
@@ -329,7 +345,25 @@ li{
 }
 
 /***********************FIN INDEX***********************/
+/***********************MASCOTAS***********************/
 
+.titulo-mascotas{
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.verde{
+    background-color: #426f58;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/***********************FIN MASCOTAS***********************/
 
 
 /*MEDIA QUERIES*/
