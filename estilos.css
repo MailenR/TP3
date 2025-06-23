@@ -5,10 +5,12 @@
 
 html{
     background-color: #ededd3;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 400px;
+    margin-right: 400px;
     color: #426f58;
+    justify-content: center;
 }
+/*Nota: cambié el margin de la version escritorio ya que esta semana mi hermano me presto su monitor mientras arreglan su compu, ya que yo estab usando uan tele viejita y los colores se veian muy saturados, y este monitor nuevo es más grande de la tele q tenia asi que veo todo más grande y siento que necesitaba mas margin porque sino se veia muy expandido todo y nome gustaba. Tambien aproveche a rehacer el css y reorganizarlo, creo que quedo más ordenado, del html no toque mucho mas, solo agregué la galeria que me faltaba*/
 
 header{
     width: 100%;
@@ -69,6 +71,7 @@ footer{
     justify-self: center;
     width: 100%;
     padding: 30px;
+    margin: 50px 0px 0px 0px;
 }
 /***********************Textos***********************/
 h1{
@@ -89,20 +92,23 @@ h3{
     font-weight: 600;
     font-size: 20px;
     padding: 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 h4{
     font-family: "Courier Prime", monospace;
     font-weight: 600;
     font-size: 20px;
+    margin: 0px;
  
 }
 
 h5{
     font-family:"Titillium Web";
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
     font-size: 15px;
+    margin: 0px;
 }
 h6{
     font-family:"Titillium Web";
@@ -115,7 +121,29 @@ h7{
     font-family:"Titillium Web";
     font-weight: 400;
     font-style: italic;
-    font-size: 10px;
+    font-size: 13px;
+}
+p{
+    font-family:"Titillium Web";
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px;
+}
+a{
+    color: #426f58;
+}
+a:visited{
+    color: #426f58;
+}
+
+li{
+    font-family:"Titillium Web";
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+    left: -15px;
 }
 /******Clases textos*******/
 .letra-capitular{
@@ -123,6 +151,15 @@ h7{
      font-size: 250px;
      /**/
 }
+
+.h4-con-fondo{
+    background-color: #426f58;
+    color: #ededd3;
+    align-self: center;
+    padding: 10px 0px 10px 20px;
+    border-radius: 10px;
+}
+
 
 /***********************Fin textos***********************/
 
@@ -153,13 +190,11 @@ h7{
     display: flex;
     flex-direction: row;
     align-content: center;
-    background-color: yellowgreen;
     gap: 20px;
 }
 .contenedor-presentacion-titulo-foto-perfil{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     gap: 20px;
     align-items: end;
 }
@@ -193,21 +228,33 @@ h7{
 .contenedor-presentación-lola-habilidades{
     display: flex;
     flex-direction: column;
-    background-color: violet;
     align-self: center;
 
 }
 .contenedor-lola-y-habilidades{
+    display: flex;
     flex-direction: row;
-    background-color: tomato;
+    gap: 50px;
 }
 .contenedor-habilidades-diseño{
-    flex-direction: row;
-    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    background-color: #426f58;
+    color: #ededd3;
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.contenedor-habilidades-diseño h4  ,h6{
+    margin: 0px;
+    padding: 0px;
 }
 
 .contenedor-habilidades{
-    background-color: seashell;
+    color: #ededd3;
     display: flex;
     flex-direction: row-reverse;
     width: fit-content;
@@ -215,6 +262,71 @@ h7{
     align-items: end;
 }
 
+
+.habilidad img{
+    border-radius: 10px;
+}
+
+.contenedor-cv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.contenedor-categorias{
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.contenedor-habilidades-generales{
+    display: flex;
+    flex-direction: column;
+    background-color: #426f58;
+    color: #ededd3;
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.contenedor-habilidades-generales h4{ 
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+.contenedor-habilidades-generales h6{
+    margin: 0px 10px 0px 5px;
+    padding: 0px;
+}
+
+.contenedor-habilidades-generales p{
+    padding: 0px 0px 20px 0px;
+}
+
+.contenedor-habilidades{
+    color: #ededd3;
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    gap: 50px;
+    align-items: end;
+}
+.habilidad-idiomas ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+}
 
 /***********************FIN INDEX***********************/
 
