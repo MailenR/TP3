@@ -362,8 +362,6 @@ audio::-webkit-media-controls-time-remaining-display {
 
 .item-videos{
     border-radius: 20px;
-    width: 1080px;
-    height: 2034px;
     padding: 20px 20px 20px 20px;
     color: #426f58;
     filter: drop-shadow(0px 4px 5px #424242);
@@ -453,7 +451,7 @@ video::-webkit-media-controls-play-button:hover{
 form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit fit-content;
 }
 
 label{
@@ -502,6 +500,7 @@ input{
 .formulario{
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .contenedor-redes-sociales{
